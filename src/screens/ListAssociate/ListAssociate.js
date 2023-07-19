@@ -1,5 +1,4 @@
 import React from "react";
-//import CardDeColaboradores from '../../components/CardDeColaboradores/CardDeColaboradores';
 import './ListAssociate.css';
 
 import CardAssociate from "../../components/CardListAssociate/CardListAssociates";
@@ -31,9 +30,7 @@ export default class ListAssociate extends React.Component{
     constructor(){
         super();
         this.service = new AssociateService();
-    }
-
-    
+    } 
 
     componentDidMount(){
         this.findAll();

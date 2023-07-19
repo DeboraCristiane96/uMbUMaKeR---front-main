@@ -12,7 +12,7 @@ import Menu from "../../components/Menu/Menu"
 
 import AssociateService from "../../services/AssociateService";
 
-export default class UpdateAssociate extends React.Component{
+export default class Update extends React.Component{
 
     state = {
         items:[{ label: 'Associados', url:"/associates" }, 
@@ -30,7 +30,7 @@ export default class UpdateAssociate extends React.Component{
         password:'',
         telefone:'',
         linkwhatsapp:'',
-        qrcode:'[...]',
+        qrcode:'',
         toast:''
     }
 

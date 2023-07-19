@@ -5,20 +5,16 @@ export default class AssociateService extends ApiService{
         super('/contasacesso')
     }
 
-    creat(obj){
-        return this.post('', obj)
+    create(obj){
+        return this.post(obj)
     }
 
     update(id,obj){
-        return this.put(`/${id}`, obj);
+        return this.put(`/${id}`);
     }
 
     delete(id){
         return super.delete(`/${id}`)
-    }
-    
-    find(params){
-        return this.get(`${params}`);
     }
     
     findAll(){
